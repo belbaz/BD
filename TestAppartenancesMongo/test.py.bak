@@ -1,0 +1,29 @@
+import json
+from pymongo import MongoClient
+import time
+
+# Établir une connexion à MongoDB
+client = MongoClient("localhost", 27017)
+
+# Sélectionner la base de données
+db = client['your_database_name']
+
+# Sélectionner ou créer la collection
+collection = db['your_collection_name']
+
+# Charger les données depuis le fichier JSON
+with open('DEM-1_1.json', 'r') as json_file:
+    words = json.load(json_file)
+
+# Mesurer le temps d'exécution
+start_time = time.time()
+
+# Insérer les données dans la collection
+result = collection.insert_many(words)
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+
+print(f"Temps d'exécution : {elapsed_time} secondes")
+
+client.close()
