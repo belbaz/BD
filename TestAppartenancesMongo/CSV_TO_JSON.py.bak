@@ -1,0 +1,34 @@
+import csv
+import json
+
+# Charger le fichier CSV dans un dictionnaire (mot, définition)
+dictionary = {}
+with open('DEM-1_1.csv', newline='', encoding='utf-8') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        word = row[0]  # Utiliser l'index de la colonne pour le mot
+        definition = row[0]  # Utiliser l'index de la colonne pour la définition
+        dictionary[word] = definition
+
+# Convertir le dictionnaire en une liste de mots
+word_list = list(dictionary.keys())
+
+# Écrire la liste de mots au format JSON
+with open('words.json', 'w') as json_file:
+    json.dump(word_list, json_file)
+
+
+/////////////////////////////////////////////////////////
+
+import csv
+import json
+
+def convert_csv_to_json(csv_file, json_file):
+    with open(csv_file, 'r') as file:
+        reader = csv.DictReader(file)
+        rows = list(reader)
+
+    with open(json_file, 'w') as file:
+        json.dump(rows, file)
+
+convert_csv_to_json('DEM-1_1.csv', 'Word2.json')
