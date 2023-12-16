@@ -6,7 +6,7 @@ Avoir installer Redis et l'avoir lancer sur le port
 Avoir installer MongoDB et l'avoir lancer sur le port 27017
 
 # avant de commencer
-python3 -m venv venv
+python -m venv venv
 Linux : . venv/bin/activate 
 Windows : venv\Scripts\activate.bat
 
