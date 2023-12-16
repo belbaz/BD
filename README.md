@@ -12,7 +12,7 @@ Windows : venv\Scripts\activate.bat
 
 pip install pymongo
 
-# Programme Python
+# Arborécence
 
 Le dossier Script contients les scripts suivants :
 -) dans le Dossier TXT : les fichier de la BD en TXT
