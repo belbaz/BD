@@ -2,7 +2,7 @@
 
 # Requirement
 
-Avoir installer Redis et l'avoir lancer sur le port 
+Avoir installer Redis et l'avoir lancer sur le port 6379 (si redis ne marche pas allez dans les servies et allez démarrer le services Redis)
 Avoir installer MongoDB et l'avoir lancer sur le port 27017
 
 # avant de commencer
