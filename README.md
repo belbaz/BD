@@ -10,7 +10,7 @@ python -m venv venv
 Linux : . venv/bin/activate 
 Windows : venv\Scripts\activate.bat
 
-pip install pymongo redis pybloom_live
+pip install pymongo pandas redis pybloom_live
 
 # Arborécence
 
