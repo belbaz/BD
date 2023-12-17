@@ -21,8 +21,12 @@
         ```bash
         venv\Scripts\activate.bat
         ```
+  3. Mettre a jour PIP :
+    ```bash
+    python.exe -m pip install --upgrade pip
+    ```      
 
-3. Installez les dépendances nécessaires :
+4. Installez les dépendances nécessaires :
     ```bash
     pip install pymongo pandas redis pybloom_live
     ```
