@@ -22,13 +22,13 @@
         venv\Scripts\activate.bat
         ```
   3. Mettre a jour PIP :
-    ```bash
-    python.exe -m pip install --upgrade pip
-    ```      
+      ```bash
+        python.exe -m pip install --upgrade pip
+      ```      
 
-4. Installez les dépendances nécessaires :
-    ```bash
-    pip install pymongo pandas redis pybloom_live
-    ```
+5. Installez les dépendances nécessaires :
+        ```bash
+        pip install pymongo pandas redis pybloom_live
+        ```
 
 Ces étapes vous permettront de mettre en place l'environnement nécessaire pour travailler avec les bases de données, notamment MongoDB et Redis.
