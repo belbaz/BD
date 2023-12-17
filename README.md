@@ -23,7 +23,7 @@
         ```
   3. Mettre a jour PIP :
       ```bash
-        python.exe -m pip install --upgrade pip
+      python.exe -m pip install --upgrade pip
       ```      
 
 5. Installez les dépendances nécessaires :
