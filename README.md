@@ -1,24 +1,30 @@
-## BD
+## Base de Données
 
-# Requirement
+# Prérequis
 
-Avoir installer Redis et l'avoir lancer sur le port 6379 (si redis ne marche pas allez dans les servies et allez démarrer le services Redis)
-Avoir installer MongoDB et l'avoir lancer sur le port 27017
+- Assurez-vous d'avoir installé Redis et de l'avoir lancé sur le port 6379. En cas de problème avec Redis, accédez aux services et démarrez le service Redis.
+- Assurez-vous d'avoir installé MongoDB et de l'avoir lancé sur le port 27017.
 
-# avant de commencer
-python -m venv venv
-Linux : . venv/bin/activate 
-Windows : venv\Scripts\activate.bat
+# Avant de Commencer
 
-pip install pymongo pandas redis pybloom_live
+1. Créez un environnement virtuel avec la commande suivante :
+    ```bash
+    python -m venv venv
+    ```
 
-# Arborécence
+2. Activez l'environnement virtuel :
+    - Linux :
+        ```bash
+        . venv/bin/activate
+        ```
+    - Windows :
+        ```bash
+        venv\Scripts\activate.bat
+        ```
 
-Le dossier Script contients les scripts suivants :
--) dans le Dossier TXT : les fichier de la BD en TXT
--) dans le Dossier CSV : les fichier convertis en CSV
--) dans le Dossier JSON : les fichier convertis en JSON
+3. Installez les dépendances nécessaires :
+    ```bash
+    pip install pymongo pandas redis pybloom_live
+    ```
 
-Le dossier TestAppartenancesMongo Contient les fichiers de test.
-
-Le dossier TestAppartenancesRedis Contient les fichiers de test.
+Ces étapes vous permettront de mettre en place l'environnement nécessaire pour travailler avec les bases de données, notamment MongoDB et Redis.
