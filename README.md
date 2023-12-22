@@ -1,5 +1,7 @@
 # Compte Rendu des TP de Base de Données BUT 3 2023
 
+Ce dépot git contient tout les scripts python du compte rendu des TP de Base de Données.
+
 # Prérequis
 
 - Assurez-vous d'avoir installé Redis et de l'avoir lancé sur le port 6379. En cas de problème avec Redis, accédez aux services et démarrez le service Redis.
