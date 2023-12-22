@@ -31,4 +31,4 @@
     pip install pymongo pandas redis pybloom_live
     ```
 
-Ces étapes vous permettront de mettre en place l'environnement nécessaire pour travailler avec les bases de données, notamment MongoDB et Redis.
+Ces étapes vont nous permettre de mettre en place l'environnement nécessaire pour travailler avec les bases de données, notamment MongoDB et Redis.
