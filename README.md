@@ -28,7 +28,7 @@
       python.exe -m pip install --upgrade pip
       ```      
 
-5. Installez les dépendances nécessaires :
+5. Installez les dépendances nécessaires (pymongo, pandas, redis et pybloom_live) :
     ```bash
     pip install pymongo pandas redis pybloom_live
     ```
