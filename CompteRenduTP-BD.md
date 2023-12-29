@@ -4,19 +4,19 @@
 # **Base de Données**
 
 </div>
-<div align="center" style="margin-top: 15px; margin-bottom: 15px;">
+<div align="center" style="margin-top: 15px; margin-bottom: 25px;">
 
 ![Texte alternatif](https://www.supalia.fr/medias/photo/logo-uspn-2023_1677074893564-png)
 
 </div>
 
-<div align="center" style="margin-top: 15px; margin-bottom: 15px;">
+<div align="center" style="margin-top: 15px; margin-bottom: 25px;">
   
 ![image](https://github.com/belbaz/BD/assets/76886674/5b3080d2-fc0f-461c-b03a-bd33e69635f1)
 
 </div>
 
-<div align="center" style="margin-top: 25px; margin-bottom: 15px;">
+<div align="center" style="margin-top: 25px; margin-bottom: 25px;">
 
 # **Benjamin Elbaz**
 
