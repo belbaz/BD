@@ -138,3 +138,47 @@ rc-service mongodb start
 mongo
 ```
 
+# VI. MongoDB
+
+## 1. Présentation de MongoDB
+
+MongoDB est une base de données NoSQL, orientée document et open source. Son modèle de données flexible permet de stocker des informations sous forme de documents JSON BSON (Binary JSON), offrant une structure de données dynamique.
+
+## 2. Installation de MongoDB dans une Alpine Linux
+
+Pour l'installation de MongoDB dans une Alpine Linux, veuillez consulter le guide disponible sur [Lien Github](https://github.com/belbaz/BD/).
+
+## 3. Jointure pour MongoDB (Python)
+
+Insérer un document (une entrée de données) dans une collection appelée "posts" dans MongoDB :
+```javascript
+db.posts.insert({ subject: "Blog Post 1", content: "Lorem Ipsum"})
+```
+
+Rechercher des documents dans la collection "posts" :
+```javascript
+db.posts.find({ subject: "Blog Post 1" })
+```
+
+Mettre à jour un seul document dans une collection :
+```javascript
+db.posts.updateOne(
+  { subject: "Blog Post 1" }, // Critère de recherche
+  { $set: { content: "New Post" } } // Nouvelles valeurs à mettre à jour
+)
+```
+
+On crée d'abord les collections Employee et Dept :
+```javascript
+db.createCollection("Employee");
+db.createCollection("Dept");
+```
+
+## 3. Jointure pour MongoDB (Python)
+
+Voir le code ici : [Lien Github](https://github.com/belbaz/BD/)
+
+La Figure 4 présente le résultat de la jointure locale effectuée à l'aide du code Python utilisant MongoClient, disponible sur GitHub. Cette opération de jointure a été réalisée entre les collections MongoDB "Vols", "Defclasses", et "Reservations". Chaque ligne de la figure représente un enregistrement résultant de cette jointure, combinant de manière cohérente les données des trois collections. L'objectif est de consolider les informations dispersées sur les vols, les classes de vol, et les réservations. La clé de jointure utilisée est "NumVol", assurant la cohérence des liens entre les enregistrements. La suppression du champ "_id" est effectuée pour garantir une sérialisation JSON adaptée, facilitant ainsi la lisibilité et l'utilisation ultérieure des données consolidées.
+
+**Figure 4 : Résultat de la Jointure MongoDB**
+
