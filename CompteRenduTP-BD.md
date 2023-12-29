@@ -148,8 +148,6 @@ MongoDB est une base de données NoSQL, orientée document et open source. Son m
 
 Pour l'installation de MongoDB dans une Alpine Linux, veuillez consulter le guide disponible sur [Lien Github](https://github.com/belbaz/BD/).
 
-## 3. Jointure pour MongoDB (Python)
-
 Insérer un document (une entrée de données) dans une collection appelée "posts" dans MongoDB :
 ```javascript
 db.posts.insert({ subject: "Blog Post 1", content: "Lorem Ipsum"})
