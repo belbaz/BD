@@ -4,8 +4,11 @@
 # **Base de Données**
 
 </div>
+<div align="center" style="margin-top: 15px; margin-bottom: 15px;">
 
 ![Texte alternatif](https://www.supalia.fr/medias/photo/logo-uspn-2023_1677074893564-png)
+
+</div>
 
 <div align="center" style="margin-top: 15px; margin-bottom: 15px;">
   
@@ -15,7 +18,7 @@
 
 <div align="center" style="margin-top: 25px; margin-bottom: 15px;">
 
-# **MOI**
+# **Benjamin Elbaz**
 
 </div>
 
