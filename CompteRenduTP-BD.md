@@ -211,3 +211,83 @@ db.Reservations.insertMany([
 ]);
 ```
 
+Ce code réalise une jointure entre trois collections MongoDB : "Vols", "Defclasses", et "Reservations". Il utilise l'agrégation MongoDB pour combiner les documents des collections en fonction du champ "NumVol". La première étape ($lookup) associe les données de la collection "Defclasses" à celles de "Vols" en utilisant le champ "NumVol". Ensuite, le résultat est déplié ($unwind) pour obtenir une structure de document unique. Une deuxième jointure est effectuée avec la collection "Reservations", suivie d'un autre dépliement. Enfin, le projet ($project) sélectionne les champs pertinents des collections liées pour former un document résultant consolidé. Ce processus crée un ensemble de documents résultants représentant une vue consolidée des vols avec des détails sur les classes et les réservations associées.
+
+Code de la Jointure : 
+```javascript
+var result = db.Vols.aggregate([
+  {
+    $lookup: {
+      from: "Defclasses",
+      localField: "NumVol",
+      foreignField: "NumVol",
+      as: "defclassesDetails"
+    }
+  },
+  {
+    $unwind: "$defclassesDetails"
+  },
+  {
+    $lookup: {
+      from: "Reservations",
+      localField: "NumVol",
+      foreignField: "NumVol",
+      as: "reservationsDetails"
+    }
+  },
+  {
+    $unwind: "$reservationsDetails"
+  },
+  {
+    $project: {
+      "NumVol": 1,
+      "VilleD": 1,
+      "VilleA": 1,
+      /* ... autres champs de la collection Vols ... */	
+      "Classe": "$defclassesDetails.Classe",
+      "CoeffPrix": "$defclassesDetails.CoeffPrix",
+      "NumCl": "$reservationsDetails.NumCl",
+      "NbPlaces": "$reservationsDetails.NbPlaces"
+    }
+  }
+]);
+
+result.forEach(doc => printjson(doc));
+```
+
+# VII. Test d'appartenance pour MongoDB
+
+Dans ce script, nous évaluons le temps nécessaire pour tester l'appartenance d'un mot dans un dictionnaire contenant 100 000 mots dans une base de données MongoDB. Nous comparons deux scénarios : un avec un index et un sans index.
+
+Un index MongoDB est une structure de données qui améliore la rapidité des opérations de recherche sur une collection. Il agit comme un tableau, établissant une correspondance entre les valeurs d'un champ particulier d'une collection et les documents associés. L'ajout d'un index sur un champ permet à MongoDB de parcourir ce champ plus efficacement lors de l'exécution de requêtes.
+
+[Script MongoDB avec index](Lien Github)
+
+Dans ce script, nous utilisons PyMongo pour interagir avec MongoDB. Nous créons deux collections, l'une avec un index et l'autre sans, mesurant ainsi le temps d'exécution pour chaque scénario. L'indexation dans MongoDB peut améliorer les performances des requêtes de recherche, mais elle nécessite également des ressources supplémentaires lors de l'insertion ou de la mise à jour de données. Les résultats du test permettront de déterminer l'impact de l'index sur les opérations d'appartenance dans ce contexte particulier.
+
+## MongoDB avec index :
+
+Temps d'exécution : 1.23 secondes
+L'utilisation d'un index améliore légèrement la performance, réduisant le temps d'exécution des opérations d'appartenance.
+
+## MongoDB sans index :
+
+Temps d'exécution : 1.31 secondes
+L'absence d'index montre une légère augmentation du temps d'exécution, impactant la rapidité des requêtes d'appartenance.
+
+## Graphique des tests d’appartenance
+
+Voici un graphique comparant les temps d'exécution des différents tests d'appartenance sur le dictionnaire qui contient 100 000 mots. Il illustre la durée, en secondes, nécessaire pour chaque test d'appartenance dans les contextes suivants : MongoDB sans index, MongoDB avec index, Redis standard, Redis Set, et Redis BloomFilter.
+
+**Figure 5 : Comparaison des tests d'Appartenance entre MongoDB et Redis**
+
+## Conclusion
+
+En conclusion, nous avons mis en œuvre des opérations pratiques, notamment des jointures entre les tables Vols, Defclasses et Reservations dans le cadre de séances de travaux pratiques en bases de données. La dénormalisation a été démontrée par la création d'une vue consolidée baptisée "jointure.json", réalisée à l'aide d'un script Python avec la bibliothèque pandas.
+
+Dans le contexte de Redis, nous avons effectué des opérations de conversion de fichiers texte vers les formats CSV et JSON, nécessaires pour intégrer les données dans le modèle clé-valeur de Redis. Les tests d'appartenance ont souligné l'efficacité du filtre de Bloom, notamment par rapport à l'utilisation d'un ensemble Redis de manière conventionnelle.
+
+Quant à MongoDB, nous avons exploré son modèle de données orienté document en réalisant des jointures entre les collections Vols, Defclasses et Reservations. Des tests d'appartenance ont été conduits pour évaluer les performances avec et sans index, mettant en lumière l'impact significatif de cette optimisation.
+
+Cette expérience pratique nous a permis d'approfondir nos compétences dans la gestion opérationnelle de bases de données, la réalisation de jointures, la dénormalisation, et l'évaluation comparative des performances entre Redis et MongoDB.
+
