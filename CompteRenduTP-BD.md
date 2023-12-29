@@ -111,3 +111,30 @@ La troisième approche utilise Redis de manière plus conventionnelle. Dans cett
   Efficacité exceptionnelle pour les tests d'appartenance rapide.
 
 Ces résultats confirment que le filtre de Bloom Redis offre des performances nettement supérieures pour les tests d'appartenance par rapport aux méthodes Redis conventionnelles.
+
+# VI. MongoDB
+
+## 1. Présentation de MongoDB
+
+MongoDB, une base de données NoSQL, offre une approche flexible avec son modèle de données orienté document. La dénormalisation des données est encouragée, éliminant le besoin de jointures coûteuses.
+
+MongoDB utilise des indexes qui agissent comme des dictionnaires, pointant directement vers les documents. Cette approche accélère les opérations de recherche avec une complexité logarithmique O(log(n)), assurant des performances optimales même avec des volumes de données importants.
+
+Concernant le stockage, MongoDB conserve les données sur le disque tout en optimisant les performances grâce à l'utilisation de la mémoire. Les données fréquemment consultées sont mises en cache en mémoire, réduisant la nécessité d'accéder fréquemment au disque et améliorant ainsi l'efficacité globale du système.
+
+## 2. Installation de MongoDB dans une Alpine Linux
+
+Sous Alpine Linux, plusieurs étapes sont nécessaires avant de pouvoir lancer MongoDB.
+
+[Lien pour la configuration de l’Alpine Linux pour installer MongoDB](https://linux.how2shout.com/how-to-install-mongodb-server-on-alpine-linux/)
+
+```bash
+echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositories
+echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/community' >> /etc/apk/repositories
+apk update
+apk add  mongodb mongodb-tools
+mkdir -p /data/db/
+rc-service mongodb start
+mongo
+```
+
