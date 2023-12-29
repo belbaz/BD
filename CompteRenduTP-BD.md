@@ -180,3 +180,34 @@ La Figure 4 présente le résultat de la jointure locale effectuée à l'aide du
 
 **Figure 4 : Résultat de la Jointure MongoDB**
 
+figure 4 : Résultat de la Jointure MongoDB
+
+
+
+## 4. Jointure pour MongoDB
+
+### Insertion de vols dans la collection "Vols" de MongoDB :
+
+```javascript
+db.Vols.insertMany([
+  { "NumVol": 1, "VilleD": "Paris", "VilleA": "New York"},
+  { "NumVol": 2, "VilleD": "London", "VilleA": "Tokyo"},
+]);
+```
+
+Insertion de vols dans la collection "Defclasses" de MongoDB :
+```javascript
+db.Defclasses.insertMany([
+  { "NumVol": 1, "Classe": "Economique", "CoeffPrix": 1.0 },
+  { "NumVol": 2, "Classe": "Affaires", "CoeffPrix": 1.5 },
+]);
+```
+
+Insertion de vols dans la collection "Reservations" de MongoDB :
+```javascript
+db.Reservations.insertMany([
+  { "NumCl": 101, "NumVol": 1, "Classe": "Economique", "NbPlaces": 2 },
+  { "NumCl": 102, "NumVol": 2, "Classe": "Affaires", "NbPlaces": 1 },
+]);
+```
+
