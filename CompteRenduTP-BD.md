@@ -1,15 +1,16 @@
+<div align="center">
+
 # **Compte Rendu**
 # **Base de Données**
 
-
 ![Texte alternatif](https://www.supalia.fr/medias/photo/logo-uspn-2023_1677074893564-png)
 
+![image](https://github.com/belbaz/BD/assets/76886674/5b3080d2-fc0f-461c-b03a-bd33e69635f1)
 
 
 
-
-
-Benjamin Elbaz
+# **Benjamin Elbaz**
+</div>
 
 # Sommaire
 
