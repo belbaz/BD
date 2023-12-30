@@ -24,24 +24,42 @@
 
 # Sommaire
 
-I. [Introduction](#i-introduction)  
+# Sommaire
+
+I. [Introduction](#i-introduction)
+  
 II. [Base de données](#ii-base-de-données)  
+   1. [Représentation graphique de la Base de Données](#1-représentation-graphique-de-la-base-de-données)  
+   2. [Guide d'installation de l'environnement Python pour Redis et MongoDB](#2-guide-dinstallation-de-lenvironnement-python-pour-redis-et-mongodb)
+
 III. [Jointure](#iii-jointure)  
+   1. [Dénormalisation par jointure des tables Vols, Defclasses, et Reservations](#1-dénormalisation-par-jointure-des-tables-vols-defclasses-et-reservations)  
+   2. [Structure de la table résultante "jointure"](#2-structure-de-la-table-résultante-jointure)
+
 IV. [Rédis](#iv-rédis)  
-    1. [Présentation](#1-présentation)  
-    2. [Script Python de conversion](#2-script-python-de-conversion)  
+   1. [Présentation](#1-présentation)  
+   2. [Script Python de conversion pour Redis](#2-script-python-de-conversion-pour-redis)
+
 V. [Test d'appartenance pour Redis](#v-test-dappartenance-pour-redis)  
-    1. [Redis Set](#1-redis-set)  
-    2. [Redis BloomFilter](#2-redis-bloomfilter)  
-    3. [Redis normalement](#3-redis-normalement)  
-    4. [Résultat des tests](#4-résultat-des-tests)  
-VI. [Mongodb](#vi-mongodb)  
-    1. [Présentation de MongoDB](#1-présentation-de-mongodb)  
-    2. [Installation de MongoDB dans une Alpine Linux](#2-installation-de-mongodb-dans-une-alpine-linux)  
-    3. [Jointure pour mongoDB (Python)](#3-jointure-pour-mongodb-python)  
+   1. [Redis Set](#1-redis-set)  
+   2. [Redis BloomFilter](#2-redis-bloomfilter)  
+   3. [Redis normalement](#3-redis-normalement)  
+   4. [Résultat des tests](#4-résultat-des-tests)
+
+VI. [MongoDB](#vi-mongodb)  
+   1. [Présentation de MongoDB](#1-présentation-de-mongodb)  
+   2. [Installation de MongoDB dans une Alpine Linux](#2-installation-de-mongodb-dans-une-alpine-linux)  
+   3. [Jointure pour MongoDB (Python)](#3-jointure-pour-mongodb-python)  
+   4. [Insertion de documents dans les collections MongoDB](#4-insertion-de-documents-dans-les-collections-mongodb)
+
 VII. [Test d'appartenance pour MongoDB](#vii-test-dappartenance-pour-mongodb)  
-VIII. [Graphique des tests d’appartenance](#viii-graphique-des-tests-dappartenance)  
+   1. [MongoDB avec index](#1-mongodb-avec-index)  
+   2. [MongoDB sans index](#2-mongodb-sans-index)
+
+VIII. [Graphique des tests d'appartenance](#viii-graphique-des-tests-dappartenance)
+
 IX. [Conclusion](#ix-conclusion)
+
 
 # I. Introduction
 
