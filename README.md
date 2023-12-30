@@ -2,6 +2,9 @@
 
 Ce dépot git contient tout les scripts python du compte rendu des TP de Base de Données.
 
+** Compte Rendu : **
+[Voir le compte Rendu ici](/CompteRenduTP-BD.md)
+
 # Prérequis
 
 - Assurez-vous d'avoir installé Redis et de l'avoir lancé sur le port 6379. En cas de problème avec Redis, accédez aux services et démarrez le service Redis.
