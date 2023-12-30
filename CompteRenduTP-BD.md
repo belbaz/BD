@@ -65,6 +65,8 @@ Ce compte rendu reflète notre expérience pratique en bases de données, soulig
 
 Voici la représentation graphique de notre Base de Données, illustrée dans la Figure 1, où chaque entité est clairement définie avec ses attributs respectifs :
 
+**Figure 1 : Schéma de la Base de Données**
+
 ![Figure 1: Schéma de la Base de Données](/ImageRapport/Figure1.png)
 
 - AVIONS (NumAv, NomAv, CapAv, VilleAv)
@@ -92,6 +94,8 @@ Voici le lien du script de la jointure : [Lien Github](https://github.com/belbaz
 
 La nouvelle table résultante, nommée "jointure", a intégré les données des vols avec les définitions de classes et les réservations associées. La clé primaire "NumVol" a servi de référence pour unifier ces informations, facilitant ainsi l'analyse et la compréhension des relations entre les différentes instances.
 
+**Figure 2 : Schéma de la Table jointure**
+
 ![Figure 2: Schéma de la Table jointure](/ImageRapport/Figure2.png)
 
 Dans la figure 2, chaque ligne représente un enregistrement de la table "jointure", avec les colonnes correspondant aux différents attributs fusionnés des tables Vols, Defclasses et Reservations. Les colonnes spécifiques à chaque table d'origine sont préfixées pour indiquer leur provenance, assurant ainsi une clarté dans la structure consolidée.
@@ -112,6 +116,8 @@ Redis stocke des données sous forme de paires clé-valeur.
 Cette troisième figure met en lumière le processus de transition des données du modèle relationnel vers le format adapté à Redis. Les carrés représentent les fichiers texte initiaux, qui sont des composants clés du modèle relationnel de la base de données. La conversion de ces fichiers vers les formats CSV et JSON est clairement visualisée, symbolisant une étape nécessaire pour préparer les données à être intégrées dans Redis.
 
 L'objectif de cette conversion est de rendre les données compatibles avec le modèle clé-valeur de Redis, qui requiert une structure {nomTable: [nomChamps, ...], ...}. Les fichiers CSV et JSON, résultant de cette conversion, représentent une mise en forme adéquate pour l'intégration ultérieure dans le système Redis.
+
+**Figure 3 :  Processus de Conversion des Fichiers Texte en Fichiers CSV et JSON**
 
 ![Figure 3 : Processus de Conversion des Fichiers Texte en Fichiers CSV et JSON](/ImageRapport/Figure3.png)
 
@@ -317,6 +323,7 @@ L'absence d'index montre une légère augmentation du temps d'exécution, impact
 Voici un graphique comparant les temps d'exécution des différents tests d'appartenance sur le dictionnaire qui contient 100 000 mots. Il illustre la durée, en secondes, nécessaire pour chaque test d'appartenance dans les contextes suivants : MongoDB sans index, MongoDB avec index, Redis standard, Redis Set, et Redis BloomFilter.
 
 **Figure 5 : Comparaison des tests d'Appartenance entre MongoDB et Redis**
+
 ![Figure 5: Comparaison des tests d'Appartenance entre MongoDB et Redis](/ImageRapport/Figure5.png)
 
 
