@@ -1,7 +1,7 @@
 <div align="center" style="margin-bottom: 15px;">
 
-# **Compte Rendu**
-# **Base de Données**
+# Compte Rendu
+# Base de Données
 
 </div>
 <div align="center" style="margin-top: 15px; margin-bottom: 25px;">
@@ -18,7 +18,7 @@
 
 <div align="center" style="margin-top: 25px; margin-bottom: 25px;">
 
-# **Benjamin Elbaz**
+# Benjamin Elbaz
 
 </div>
 
