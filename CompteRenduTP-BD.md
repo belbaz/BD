@@ -217,7 +217,7 @@ La Figure 4 présente le résultat de la jointure locale effectuée à l'aide du
 
 **Figure 4 : Résultat de la Jointure MongoDB**
 
-figure 4 : Résultat de la Jointure MongoDB
+![Figure 4: Résultat de la Jointure MongoDB](/ImageRapport/Figure4.png)
 
 
 
