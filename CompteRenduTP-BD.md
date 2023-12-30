@@ -24,8 +24,6 @@
 
 # Sommaire
 
-# Sommaire
-
 I. [Introduction](#i-introduction)
   
 II. [Base de données](#ii-base-de-données)  
