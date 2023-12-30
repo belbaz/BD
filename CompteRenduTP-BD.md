@@ -183,14 +183,6 @@ rc-service mongodb start
 mongo
 ```
 
-# VI. MongoDB
-
-## 1. Présentation de MongoDB
-
-MongoDB est une base de données NoSQL, orientée document et open source. Son modèle de données flexible permet de stocker des informations sous forme de documents JSON BSON (Binary JSON), offrant une structure de données dynamique.
-
-## 2. Installation de MongoDB dans une Alpine Linux
-
 Pour l'installation de MongoDB dans une Alpine Linux, veuillez consulter le guide disponible sur [Lien Github](https://github.com/belbaz/BD/).
 
 Insérer un document (une entrée de données) dans une collection appelée "posts" dans MongoDB :
@@ -320,13 +312,13 @@ L'utilisation d'un index améliore légèrement la performance, réduisant le te
 Temps d'exécution : 1.31 secondes
 L'absence d'index montre une légère augmentation du temps d'exécution, impactant la rapidité des requêtes d'appartenance.
 
-## Graphique des tests d’appartenance
+## VIII. Graphique des tests d’appartenance
 
 Voici un graphique comparant les temps d'exécution des différents tests d'appartenance sur le dictionnaire qui contient 100 000 mots. Il illustre la durée, en secondes, nécessaire pour chaque test d'appartenance dans les contextes suivants : MongoDB sans index, MongoDB avec index, Redis standard, Redis Set, et Redis BloomFilter.
 
 **Figure 5 : Comparaison des tests d'Appartenance entre MongoDB et Redis**
 
-## Conclusion
+## IX. Conclusion
 
 En conclusion, nous avons mis en œuvre des opérations pratiques, notamment des jointures entre les tables Vols, Defclasses et Reservations dans le cadre de séances de travaux pratiques en bases de données. La dénormalisation a été démontrée par la création d'une vue consolidée baptisée "jointure.json", réalisée à l'aide d'un script Python avec la bibliothèque pandas.
 
