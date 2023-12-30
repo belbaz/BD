@@ -65,7 +65,7 @@ Ce compte rendu reflète notre expérience pratique en bases de données, soulig
 
 Voici la représentation graphique de notre Base de Données, illustrée dans la Figure 1, où chaque entité est clairement définie avec ses attributs respectifs :
 
-![Figure 1: Schéma de la Base de Données](image1.png)
+![Figure 1: Schéma de la Base de Données](/ImageRapport/Figure1.png)
 
 - AVIONS (NumAv, NomAv, CapAv, VilleAv)
 - PILOTES (NumPil, NomPil, NaisPil, VillePil)
@@ -113,7 +113,7 @@ Cette troisième figure met en lumière le processus de transition des données 
 
 L'objectif de cette conversion est de rendre les données compatibles avec le modèle clé-valeur de Redis, qui requiert une structure {nomTable: [nomChamps, ...], ...}. Les fichiers CSV et JSON, résultant de cette conversion, représentent une mise en forme adéquate pour l'intégration ultérieure dans le système Redis.
 
-![Figure 3 : Processus de Conversion des Fichiers Texte en Fichiers CSV et JSON](image3.png)
+![Figure 3 : Processus de Conversion des Fichiers Texte en Fichiers CSV et JSON](/ImageRapport/Figure3.png)
 
 [Script python TXT to CSV : Lien Github](https://github.com/belbaz/BD/)
 
@@ -317,6 +317,8 @@ L'absence d'index montre une légère augmentation du temps d'exécution, impact
 Voici un graphique comparant les temps d'exécution des différents tests d'appartenance sur le dictionnaire qui contient 100 000 mots. Il illustre la durée, en secondes, nécessaire pour chaque test d'appartenance dans les contextes suivants : MongoDB sans index, MongoDB avec index, Redis standard, Redis Set, et Redis BloomFilter.
 
 **Figure 5 : Comparaison des tests d'Appartenance entre MongoDB et Redis**
+![Figure 5: Comparaison des tests d'Appartenance entre MongoDB et Redis](/ImageRapport/Figure5.png)
+
 
 ## IX. Conclusion
 
