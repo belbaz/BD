@@ -2,7 +2,7 @@
 
 Ce dépot git contient tout les scripts python du compte rendu des TP de Base de Données.
 
-** Compte Rendu : **
+# *Compte Rendu : *
 [Voir le compte Rendu ici](/CompteRenduTP-BD.md)
 
 # Prérequis
