@@ -92,7 +92,7 @@ Voici le lien du script de la jointure : [Lien Github](https://github.com/belbaz
 
 La nouvelle table résultante, nommée "jointure", a intégré les données des vols avec les définitions de classes et les réservations associées. La clé primaire "NumVol" a servi de référence pour unifier ces informations, facilitant ainsi l'analyse et la compréhension des relations entre les différentes instances.
 
-![Figure 2: Schéma de la Table jointure](image2.png)
+![Figure 2: Schéma de la Table jointure](/ImageRapport/Figure2.png)
 
 Dans la figure 2, chaque ligne représente un enregistrement de la table "jointure", avec les colonnes correspondant aux différents attributs fusionnés des tables Vols, Defclasses et Reservations. Les colonnes spécifiques à chaque table d'origine sont préfixées pour indiquer leur provenance, assurant ainsi une clarté dans la structure consolidée.
 
