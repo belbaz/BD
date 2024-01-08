@@ -4,7 +4,7 @@
 # Base de Données
 
 </div>
-<div align="center" style="margin-top: 15px; margin-bottom: 25px;">
+<div align="center" style="margin-top: 15px; margin-bottom: 45px;">
 
 ![Texte alternatif](https://www.supalia.fr/medias/photo/logo-uspn-2023_1677074893564-png)
 
