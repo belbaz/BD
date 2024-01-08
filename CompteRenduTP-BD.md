@@ -16,7 +16,7 @@
 
 </div>
 
-<div align="center" style="margin-top: 25px; margin-bottom: 25px;">
+<div align="center" style="margin-top: 25px; margin-bottom: 35px;">
 
 # Benjamin Elbaz
 
