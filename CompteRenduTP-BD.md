@@ -89,7 +89,7 @@ Notre approche de dénormalisation, matérialisée par cette jointure, s'inscrit
 
 Il est crucial de souligner que cette démarche ne s'éloigne pas des principes fondamentaux de la normalisation des bases de données. Elle vise plutôt à optimiser la structure des données pour des besoins d'analyse spécifiques tout en maintenant l'intégrité et la cohérence des informations stockées.
 
-Voici le lien du script de la jointure : [Lien Github]([https://github.com/belbaz/BD/](https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20Normal/Jointure.py))
+Voici le lien du script de la jointure : [Lien Github](https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20Normal/Jointure.py)
 
 La nouvelle table résultante, nommée "jointure", a intégré les données des vols avec les définitions de classes et les réservations associées. La clé primaire "NumVol" a servi de référence pour unifier ces informations, facilitant ainsi l'analyse et la compréhension des relations entre les différentes instances.
 
