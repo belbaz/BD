@@ -120,11 +120,11 @@ L'objectif de cette conversion est de rendre les données compatibles avec le mo
 
 ![Figure 3 : Processus de Conversion des Fichiers Texte en Fichiers CSV et JSON](/ImageRapport/Figure3.png)
 
-[Script python TXT to CSV : Lien Github]([https://github.com/belbaz/BD/](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/TXT_TO_CSV.py))
+[Script python TXT to CSV : Lien Github](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/TXT_TO_CSV.py)
 
-[Script python CSV to JSON : Lien Github]([https://github.com/belbaz/BD/](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/CSV_TO_JSON.py))
+[Script python CSV to JSON : Lien Github](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/CSV_TO_JSON.py)
 
-[Script python qui fait la jointure avec Redis : Lien Github]([https://github.com/belbaz/BD/](https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20Redis/jointureRedis.py))
+[Script python qui fait la jointure avec Redis : Lien Github](https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20Redis/jointureRedis.py)
 
 ## V. Test d'appartenance pour Redis
 
@@ -132,7 +132,7 @@ Ce code vise à évaluer le temps nécessaire pour tester l'appartenance de 100 
 
 Le dictionnaire utilisé pour les tests provient du fichier CSV DEM-1_1.csv accessible à l'adresse suivante : [Lien CSV](http://rali.iro.umontreal.ca/DEM//DEM-1_1.csv)
 
-[Voici le lien du script : Lien Github]([https://github.com/belbaz/BD/](https://github.com/belbaz/BD/blob/main/TestAppartenancesRedis/TestRedis.py))
+[Voici le lien du script : Lien Github](https://github.com/belbaz/BD/blob/main/TestAppartenancesRedis/TestRedis.py)
 
 ## 1. Redis Set :
 
@@ -303,7 +303,7 @@ Dans ce script, nous évaluons le temps nécessaire pour tester l'appartenance d
 
 Un index MongoDB est une structure de données qui améliore la rapidité des opérations de recherche sur une collection. Il agit comme un tableau, établissant une correspondance entre les valeurs d'un champ particulier d'une collection et les documents associés. L'ajout d'un index sur un champ permet à MongoDB de parcourir ce champ plus efficacement lors de l'exécution de requêtes.
 
-Voici le lien du script : [Lien Github]([https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20MongoDB/joiuntureMongoDB.py](https://github.com/belbaz/BD/blob/main/TestAppartenancesMongo/TestMongo.py))
+Voici le lien du script : [Lien Github](https://github.com/belbaz/BD/blob/main/TestAppartenancesMongo/TestMongo.py)
 
 Dans ce script, nous utilisons PyMongo pour interagir avec MongoDB. Nous créons deux collections, l'une avec un index et l'autre sans, mesurant ainsi le temps d'exécution pour chaque scénario. L'indexation dans MongoDB peut améliorer les performances des requêtes de recherche, mais elle nécessite également des ressources supplémentaires lors de l'insertion ou de la mise à jour de données. Les résultats du test permettront de déterminer l'impact de l'index sur les opérations d'appartenance dans ce contexte particulier.
 
