@@ -57,9 +57,8 @@ Le processus de transformation de données a été une composante cruciale, pass
 
 Enfin, pour faciliter l'accès et le partage du code développé, l'ensemble des scripts Python, y compris ceux pour la conversion de formats, les opérations Redis et les requêtes MongoDB, ont été regroupés sur un dépôt GitHub. Ci joint le lien : [GitHub](https://github.com/belbaz/BD/)
 
-Ce compte rendu reflète notre expérience pratique en bases de données, soulignant les compétences acquises et les activités concrètes, tout en mettant en avant le processus exploratoire de configuration et de prise en main avant chaque nouvelle base de données.
-
-**Notre compte rendu s'articulera autour de deux axes principaux : Redis et MongoDB. Après une présentation de la base de données, nous explorerons Redis en présentant ses concepts et en détaillant des script Python. Suivront des tests d'appartenance, puis nous aborderons MongoDB avec son installation, des jointures, et des tests spécifiques. En conclusion, nous synthétiserons nos découvertes et compétences acquises.**
+**Ce compte rendu s'articulera autour de deux axes principaux : Redis et MongoDB. Après une présentation de la base de données, nous explorerons Redis en présentant ses concepts et en détaillant des script Python. Suivront des tests d'appartenance, puis nous aborderons MongoDB avec son installation, des jointures, et des tests spécifiques. En conclusion.
+En somme ce compte ce compte rendu reflète notre expérience pratique en bases de données, soulignant les compétences acquises et les activités concrètes, tout en mettant en avant le processus exploratoire de configuration et de prise en main avant chaque nouvelle base de données.**
 
 # II. Base de données
 
