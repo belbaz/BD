@@ -120,11 +120,11 @@ L'objectif de cette conversion est de rendre les données compatibles avec le mo
 
 ![Figure 3 : Processus de Conversion des Fichiers Texte en Fichiers CSV et JSON](/ImageRapport/Figure3.png)
 
-[Script python TXT to CSV : Lien Github](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/TXT_TO_CSV.py)
+Script python TXT to CSV : [Lien Github](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/TXT_TO_CSV.py)
 
-[Script python CSV to JSON : Lien Github](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/CSV_TO_JSON.py)
+Script python CSV to JSON : [Lien Github](https://github.com/belbaz/BD/blob/main/TXT%20to%20CSV%20to%20JSON/CSV_TO_JSON.py)
 
-[Script python qui fait la jointure avec Redis : Lien Github](https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20Redis/jointureRedis.py)
+Script python qui fait la jointure avec Redis : [Lien Github](https://github.com/belbaz/BD/blob/main/Jointure/Jointure%20Redis/jointureRedis.py)
 
 ## V. Test d'appartenance pour Redis
 
@@ -132,7 +132,7 @@ Ce code vise à évaluer le temps nécessaire pour tester l'appartenance de 100 
 
 Le dictionnaire utilisé pour les tests provient du fichier CSV DEM-1_1.csv accessible à l'adresse suivante : [Lien CSV](http://rali.iro.umontreal.ca/DEM//DEM-1_1.csv)
 
-[Voici le lien du script : Lien Github](https://github.com/belbaz/BD/blob/main/TestAppartenancesRedis/TestRedis.py)
+Voici le lien du script : [Lien Github](https://github.com/belbaz/BD/blob/main/TestAppartenancesRedis/TestRedis.py)
 
 ## 1. Redis Set :
 
@@ -176,7 +176,7 @@ Concernant le stockage, MongoDB conserve les données sur le disque tout en opti
 
 Sous Alpine Linux, plusieurs étapes sont nécessaires avant de pouvoir lancer MongoDB.
 
-[Lien pour la configuration de l’Alpine Linux pour installer MongoDB](https://linux.how2shout.com/how-to-install-mongodb-server-on-alpine-linux/)
+Lien pour la configuration de l’Alpine Linux pour installer MongoDB : [lien ici](https://linux.how2shout.com/how-to-install-mongodb-server-on-alpine-linux/)
 
 ```bash
 echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositories
@@ -187,8 +187,6 @@ mkdir -p /data/db/
 rc-service mongodb start
 mongo
 ```
-
-Pour l'installation de MongoDB dans une Alpine Linux, veuillez consulter le guide disponible sur [Lien Github](https://github.com/belbaz/BD/).
 
 Insérer un document (une entrée de données) dans une collection appelée "posts" dans MongoDB :
 ```javascript
