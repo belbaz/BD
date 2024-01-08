@@ -16,11 +16,10 @@
 
 </div>
 
-<div align="center" style="margin-top: 25px; margin-bottom: 35px;"/>
-
+<div align="center" style="margin-top: 25px; margin-bottom: 35px;">
 # Benjamin Elbaz
-
-<div align="center" style="margin-top: 25px; margin-bottom: 35px;"/>
+</div>
+<div align="center" style="margin-top: 25px; margin-bottom: 35px;"/></div>
 
 # Sommaire
 
